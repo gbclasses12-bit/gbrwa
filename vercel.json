@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/rwa.php(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/pdf(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/video(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/healthz",
+      "destination": "/api"
+    },
+    {
+      "source": "/rwax/(.*)",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/content.html(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
